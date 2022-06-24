@@ -48,7 +48,7 @@ else{
             <div class="collapse navbar-collapse" id="navbardisplaynavigations">
                 <div class="navbar-nav">
                      <a href="index.html" class="nav-link active">Home</a>
-                     <a href="aboutus.html" class="nav-link"> About us</a>
+                     <a href="#" class="nav-link"> About us</a>
                      <a href="#" class="nav-link">Contact us</a>
                      
                      
