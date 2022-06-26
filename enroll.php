@@ -1,12 +1,17 @@
 <?php
     
-    $server="localhost";
-    $username="root";
-    $password="";
-    $database="zalego";
-    $conn = mysqli_connect($server,$username,$password,$database);
+    // $server="localhost";
+    // $username="root";
+    // $password="";
+    // $database="zalego";
+    // $conn = mysqli_connect($server,$username,$password,$database);
     
-    //fetch data
+    // //fetch data
+    // $fullname=$_POST[' fullname']
+    // $phonenumber=$POST[' phonenumber']
+    // $email=$POST[' email']
+    // $gender=$POSt[' gender']
+    // $course=$POST_[' course']    
     
 ?>
 
@@ -35,8 +40,8 @@
         
             <div class="collapse navbar-collapse" id="navbardisplaynavigations">
                 <div class="navbar-nav">
-                     <a href="#" class="nav-link active">Home</a>
-                     <a href="aboutus.html" class="nav-link"> About us</a>
+                     <a href="index.php" class="nav-link active">Home</a>
+                     <a href="aboutus" class="nav-link"> About us</a>
                      <a href="#" class="nav-link"><button class=" btn btn-primary ">Register now</button></a>
                      
                      
@@ -68,51 +73,73 @@
         <form>
             <div class="row">
             <div class="col-lg-6">
-                <label for="Fullname" class="form-label">full name</label>
-                <input type="text" class="form-control" placeholder="Enter your full name">
+                <label for="fullname" class="form-label"><b>Full name:</b></label>
+                <input type="text" name="fullname"  class="form-control" placeholder="Enter your full name">
             </div>
             <div class="col-lg-6">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" placeholder="+2547.....">
+                <label for="phone" class="form-label"><b>Phone Numbe</b>r</label>
+                <input type="text" name="phone"  class="form-control" placeholder="+2547.....">
             </div>
             <div class="col-lg-6">
-                <label for="Firstname" class="form-label">Email Address</label>
+                <label for="firstname" class="form-label"><b>Email Address</b></label>
                 <input type="text" class="form-control" placeholder="please enter your email">
             </div>
             <div class="col-lg-6">
-                <label for="gender" class="form-label">What's your gender</label>
-                <input type="text" class="form-control" placeholder="--select your gender">
+                <label for="gender" class="form-label"><b>What's your gender</b></label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>--Select your gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    
+                </select>
             </div>
             </div>
             <br>
             <p>In order to complete your registration to the bootcamp, you are required to select one course yoy will be undertaking. Please NOTE that this will be your learning track during the w-weeeks immersion</p>
             <br>
             <div class="col-lg-6">
-                <label for="course" class="form-label">What's your preferred course?</label>
-                <input type="text" class="form-control" placeholder="--select your course">
+                <div class="form-group">
+                    <label for="demo_overview"><b>What's your preffered course</b></label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected> <b>--select your course</b> </option>
+                            <option value="1">Web Design</option>
+                            <option value="2">Cyber security</option><b></b>
+                            <option value="3">Data Analysis</option>
+                        </select>
+                 
+                 
+                </div>
             </div>
             <br>
             <p>You agree by providing your information you understand all our data privacy and protection policy outlined in our terms & condition and the privacy policy terms</p>
-        
+            
             <div class = "form-check">  
                 <input class = "form-check-input"   type = "checkbox" id = "checkbox1" name="option1" value="good" >  
                 <label class="form-check-label"><b>Agreeing terms and conditions</b></label>  
-            </div>  
+            </div>
+            <button class="btn btn-primary ">submit application</button>
+            
+             
+
         
     
     
         <p class="text-center">Subscribe to get information latest news about <br> zalego Academy</p>
     
-    
-            <div class="col-lg-6">
-                <label for="email" class="form-label">What's your preferred course?</label>
-                <input type="text" class="form-control" placeholder="your email address">
+        <div class="row">
+            <div class="col-lg-6 ">
+                
+                <input type="text" class="form-control" placeholder="your email address" >
             </div>
             
-            <button class="btn btn-primary">Subscribe</button>
-
-            <br>
+            <div class="col-lg-6 ">
+                <button class="btn btn-primary">Subscribe</button>
+            </div>
             
+         </div>    
+
+            
+     
         </form>    
     </div>      
 
