@@ -18,10 +18,10 @@
     $insertData=mysqli_query($conn,"INSERT INTO enrollment(fullname,phonenumber,email,gender,course) 
     VALUES('$fullname','$phonenumber','$email','$gender','$course')");
     
-    
-
     }
+    
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,45 +31,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enroll page</title>
     <link rel="stylesheet" href="bootstrap-5.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="enroll.css">
+    <link rel="stylesheet" href="enroll2.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
     <!-- navigation bar here -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">zalego academy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardisplaynavigations" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-                
-        
-            <div class="collapse navbar-collapse" id="navbardisplaynavigations">
-                <div class="navbar-nav">
-                     <a href="#" class="nav-link active">Home</a>
-                     <a href="aboutus.html" class="nav-link"> About us</a>
-                     <a href="#" class="nav-link"><button class=" btn btn-primary ">Register now</button></a>
-                     
-                     
-                </div>
-            
-            </div>
-    
-        </div>
-        
-
-    </nav>
+    <!-- using iclude function -->
+    <?php
+    include("navbar.php");
+    ?>
     <br>
 
     <!-- end navigation bar here -->
-    <main class="p-5 mb-4 bg-light ">
-    <h1>
-        JULY SOFTWARE ENGINEERING BOOTCAMP
-    </h1>
-    <span><i class="fa fa-calendar fa-3x"  aria-hidden="true"></i> 20th July 2022</span><p></p>
-    <span> <i class="fa fa-map-marker fa-3x" aria-hidden="true"> </i> zalego Academy,  <br>Devan Plaza </span>
+    
+    <main class="p-5 mb-4 bg-light" >
+    <div class="container d-flex align-items-center justify-content-center">
+        <div>
+             <h1 class="header" style="">
+            JULY SOFTWARE ENGINEERING BOOTCAMP
+        </h1>   
+        </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center">
+        <div>
+            <span><i class="fa fa-calendar fa-3x "  aria-hidden="true"></i> 20th July 2022</span><p></p>    
+        </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center">
+        <div>
+             <span> <i class="fa fa-map-marker fa-3x" aria-hidden="true"> </i> zalego Academy, <br> Devan Plaza </span>   
+        </div>
+    </div>   
+        
+        
+        
     
     </main>
     <p class="text-center" >Looking for a place to kickstart your career in technology? <br>
